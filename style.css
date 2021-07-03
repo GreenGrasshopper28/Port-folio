@@ -1,0 +1,318 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("Requited Script Demo.ttf");
+  }
+  
+  div.zero h1 
+{
+    text-decoration: underline;
+    font-size: 72pt;
+    color: darkkhaki;
+    background-color: darkolivegreen;
+    text-align: center;
+    font-family: myFirstFont;
+}
+
+#time
+{
+  text-align: right;
+  background-color: lightcyan;
+  font-size: 20px;
+}
+
+
+
+
+
+div.before_first ul
+{
+    background-color: yellow;
+    list-style: none;
+    display: flex; 
+    text-decoration: none;
+    
+    
+}
+
+.button
+{
+    display: flex;
+    border-radius: 4px;
+    border:none;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 327px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span
+{
+  cursor: pointer;
+  display: flex;
+  position:relative;
+  transition: 0.5s;
+}
+
+.button span:after
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span
+{
+  padding-right: 25px;
+}
+
+.button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+div.first
+  {
+      height: 70%;
+     
+      background-repeat:no-repeat;
+      text-align: center;
+      background-color:rgb(2, 2, 56);
+      background-image: url("first.jpg");
+  }
+
+
+
+
+
+  div.first p
+  {
+      font-size: 40px;
+      font-weight: bolder;
+      padding-left: 30%;
+      color: orangered;
+      padding-top: 13%;
+      font-family:cursive;
+  }
+
+  div.br
+{
+    background-color: rgb(156, 23, 23);
+    height: 3%;
+}
+
+div.second 
+   {
+    height: 50%;
+    background-color: teal;
+    background-image: url("digital.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+  
+   }
+
+
+   div.second p
+   {
+       font-size: 22px;
+       text-align: left;
+       color: #bfff00;;
+       font-family:cursive; 
+
+   }
+
+
+h2
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    height: 70px;
+    background-color: coral;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.three
+{
+    display:flex;
+   /* background-color: darkviolet;*/
+    height: 280px;
+
+
+}
+  
+div.three ul li
+{
+    background-color:chartreuse;
+    font-family: 'Times New Roman', Times, serif;
+    width: 327px;
+    height: 200px;
+    margin:45px;
+    border: 5px solid gray;
+    border-radius: 4px;
+   list-style: none;
+    
+}
+
+
+hr
+{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+h4
+{
+    color: black;
+    text-align:center;
+    font-size: 20px;
+    padding:5px;
+}
+
+div.four
+{
+    display: flex;
+   /* background-color: fuchsia;*/
+    height: 280px;
+
+}
+  
+div.four ul li
+{
+    background-color:chartreuse;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 45px;
+    width: 327px;
+    height: 200px;
+    border: 5px solid gray;
+    border-radius: 4px;
+   list-style: none;
+    
+}
+
+div.fourth 
+{
+    height: 25%;
+    background-color: black;
+}
+div.fifth 
+{
+    height: 25%;
+    background-color: black;
+}
+
+div.sixth
+{
+    text-align:right;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size:50px;
+    background-color: black;
+}
+
+.button_one
+{
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 250px;
+ margin:5px;
+
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button_one:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300px;
+  padding-left: 350px;
+  margin-left: -20px;
+  margin-top: -120px;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button_one:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+@media only screen and (max-width: 620px)
+ {
+  
+  div.zero,div.first,div.second
+  {
+    display: block;
+  }
+
+ 
+.before_first,.button_one
+{
+  display: block;
+}
+
+div.fourth,div.fifth,div.sixth
+{
+  height: 30px;
+  font-size: 20px;
+}
+div.three
+{
+  
+  margin-top:5%;
+  padding-left: 0;
+  display: inline-table;
+  width:40vw
+}
+div.four
+{
+  
+  margin-top:2%;
+  padding-left: 0;
+  display: inline-table;
+  width:40vw
+}
+div.before_first ul
+{
+  display: inline-block;
+  width: 97vw;
+}
+.button
+{
+  width:95vw;
+}
+}
+
+
+
+
+   
